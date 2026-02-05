@@ -3,6 +3,8 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/auth_gateway" />
+    <file type="web" url="file://$PROJECT_DIR$/auth_service" />
+    <file type="web" url="file://$PROJECT_DIR$/auth_service_fraud" />
     <file type="web" url="file://$PROJECT_DIR$/fraud_action_service" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_25" default="true" project-jdk-name="openjdk-25" project-jdk-type="JavaSDK">

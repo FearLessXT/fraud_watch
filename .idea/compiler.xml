@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="auth_service" target="25" />
+    </bytecodeTargetLevel>
+  </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-service.main" options="-parameters" />
+      <module name="auth-service.test" options="-parameters" />
       <module name="auth_gateway" options="-parameters" />
       <module name="auth_gateway.main" options="-parameters" />
       <module name="auth_gateway.test" options="-parameters" />
+      <module name="auth_service" options="-parameters" />
+      <module name="auth_service.main" options="-parameters" />
+      <module name="auth_service.test" options="-parameters" />
+      <module name="auth_service_fraud" options="-parameters" />
+      <module name="auth_service_fraud.main" options="-parameters" />
+      <module name="auth_service_fraud.test" options="-parameters" />
       <module name="fraud_action_service" options="-parameters" />
       <module name="fraud_action_service.main" options="-parameters" />
       <module name="fraud_action_service.test" options="-parameters" />

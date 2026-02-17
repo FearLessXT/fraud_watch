@@ -30,7 +30,8 @@ public class ClientRegistrationConfig {
         if (repo.findByClientId("fraud-client") == null) {
             RegisteredClient client = RegisteredClient.withId("fraud-client-id")
                     .clientId(clientId)
-                    .clientSecret(clientSecret)
+                    .clientSecret(passwordEncoder.encode(clientSecret))
+                    .clientName("Fraud Detection Service")
                     .clientAuthenticationMethod(
                             ClientAuthenticationMethod.CLIENT_SECRET_BASIC
                     )

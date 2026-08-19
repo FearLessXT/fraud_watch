@@ -61,7 +61,6 @@ public class TransactionDecisionListener {
             }
 
             kafkaTemplate.send(out);
-            acknowledgment.acknowledge();
         } catch (Exception e) {
             // NO acknowledgement, kafaka will retry
         } finally {

@@ -46,7 +46,7 @@ public class GatewayRouteConfig {
                                         .setKeyResolver(ipKeyResolver)
                                 )
                         )
-                        .uri("http://localhost:8002")
+                        .uri("http://localhost:9002")
                 )
                 .build();
 

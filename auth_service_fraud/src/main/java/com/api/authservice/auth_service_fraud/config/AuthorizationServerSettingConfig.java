@@ -11,7 +11,7 @@ public class AuthorizationServerSettingConfig {
     AuthorizationServerSettings authorizationServerSettings() {
         return AuthorizationServerSettings
                 .builder()
-                .issuer("http://localhost:8001")
+                .issuer("http://localhost:9001")
                 .build();
     }
 }

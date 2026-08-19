@@ -2,7 +2,11 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="auth-service.main" target="25" />
+      <module name="auth-service.test" target="25" />
       <module name="auth_service" target="25" />
+      <module name="auth_service.main" target="25" />
+      <module name="auth_service.test" target="25" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -18,6 +22,9 @@
       <module name="auth_service_fraud" options="-parameters" />
       <module name="auth_service_fraud.main" options="-parameters" />
       <module name="auth_service_fraud.test" options="-parameters" />
+      <module name="decision_service_fraud" options="-parameters" />
+      <module name="decision_service_fraud.main" options="-parameters" />
+      <module name="decision_service_fraud.test" options="-parameters" />
       <module name="fraud_action_service" options="-parameters" />
       <module name="fraud_action_service.main" options="-parameters" />
       <module name="fraud_action_service.test" options="-parameters" />

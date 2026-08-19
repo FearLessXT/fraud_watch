@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth_gateway.main.iml" filepath="$PROJECT_DIR$/.idea/modules/auth_gateway.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fraud_action_service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fraud_action_service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/fraud_detection.iml" filepath="$PROJECT_DIR$/.idea/fraud_detection.iml" />
     </modules>
   </component>

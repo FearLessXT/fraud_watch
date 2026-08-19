@@ -23,7 +23,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-webmvc'
     implementation 'org.springframework.security:spring-security-oauth2-authorization-server'
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
-    runtimeOnly 'com.mysql:mysql-connector-j'
+    implementation 'org.postgresql:postgresql'
     implementation 'org.projectlombok:lombok'
     implementation "commons-logging:commons-logging:1.3.4"
     testImplementation 'org.springframework.boot:spring-boot-starter-security-test'

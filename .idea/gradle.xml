@@ -4,14 +4,6 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/auth-service" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/auth-service" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/auth_gateway" />
         <option name="modules">
           <set>
@@ -20,18 +12,18 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/auth_service" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/auth_service" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/auth_service_fraud" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/auth_service_fraud" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/decision_service_fraud" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/decision_service_fraud" />
           </set>
         </option>
       </GradleProjectSettings>

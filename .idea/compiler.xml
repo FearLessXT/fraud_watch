@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.46/a5cfe99fdf320e84955ef653f2ce1bf789d11385/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="alert_case_service_detection.main" />
+      </profile>
+    </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="action_service_fruad" target="25" />
+      <module name="action_service_fruad.main" target="25" />
+      <module name="action_service_fruad.test" target="25" />
       <module name="auth-service.main" target="25" />
       <module name="auth-service.test" target="25" />
       <module name="auth_service" target="25" />
@@ -11,6 +23,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="action_service_fruad" options="-parameters" />
+      <module name="action_service_fruad.main" options="-parameters" />
+      <module name="action_service_fruad.test" options="-parameters" />
+      <module name="alert_case_service_detection" options="-parameters" />
+      <module name="alert_case_service_detection.main" options="-parameters" />
+      <module name="alert_case_service_detection.test" options="-parameters" />
       <module name="auth-service.main" options="-parameters" />
       <module name="auth-service.test" options="-parameters" />
       <module name="auth_gateway" options="-parameters" />

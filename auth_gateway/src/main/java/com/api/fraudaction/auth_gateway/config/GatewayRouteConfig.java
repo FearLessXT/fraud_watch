@@ -33,7 +33,7 @@ public class GatewayRouteConfig {
                                         .setKeyResolver(ipKeyResolver)
                                 )
                         )
-                        .uri("http://localhost:8001")
+                        .uri("http://localhost:9001")
                 )
 
                 //TRANSACTION INGESTION

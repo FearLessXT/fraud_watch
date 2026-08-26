@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/FearLessXT/fraud_detection_config_repo
+          default-label: main
+
+server:
+  port: 8888

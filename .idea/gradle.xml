@@ -28,6 +28,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/config-server" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/config-server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/decision_service_fraud" />
         <option name="modules">
           <set>
@@ -40,6 +48,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/fraud_action_service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/risk_score_service_fruad" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/risk_score_service_fruad" />
           </set>
         </option>
       </GradleProjectSettings>

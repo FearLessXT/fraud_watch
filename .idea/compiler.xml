@@ -5,9 +5,9 @@
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.46/a5cfe99fdf320e84955ef653f2ce1bf789d11385/lombok-1.18.46.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.42/8365263844ebb62398e0dc33057ba10ba472d3b8/lombok-1.18.42.jar" />
         </processorPath>
-        <module name="alert_case_service_detection.main" />
+        <module name="risk_score_service_fruad.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +19,12 @@
       <module name="auth_service" target="25" />
       <module name="auth_service.main" target="25" />
       <module name="auth_service.test" target="25" />
+      <module name="config_server" target="25" />
+      <module name="config_server.main" target="25" />
+      <module name="config_server.test" target="25" />
+      <module name="fraud_detection_server" target="25" />
+      <module name="fraud_detection_server.main" target="25" />
+      <module name="fraud_detection_server.test" target="25" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -40,12 +46,24 @@
       <module name="auth_service_fraud" options="-parameters" />
       <module name="auth_service_fraud.main" options="-parameters" />
       <module name="auth_service_fraud.test" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="config-server.main" options="-parameters" />
+      <module name="config-server.test" options="-parameters" />
+      <module name="config_server" options="-parameters" />
+      <module name="config_server.main" options="-parameters" />
+      <module name="config_server.test" options="-parameters" />
       <module name="decision_service_fraud" options="-parameters" />
       <module name="decision_service_fraud.main" options="-parameters" />
       <module name="decision_service_fraud.test" options="-parameters" />
       <module name="fraud_action_service" options="-parameters" />
       <module name="fraud_action_service.main" options="-parameters" />
       <module name="fraud_action_service.test" options="-parameters" />
+      <module name="fraud_detection_server" options="-parameters" />
+      <module name="fraud_detection_server.main" options="-parameters" />
+      <module name="fraud_detection_server.test" options="-parameters" />
+      <module name="risk_score_service_fruad" options="-parameters" />
+      <module name="risk_score_service_fruad.main" options="-parameters" />
+      <module name="risk_score_service_fruad.test" options="-parameters" />
     </option>
   </component>
 </project>

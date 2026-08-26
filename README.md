@@ -24,6 +24,14 @@ Fraud detection is a distributed decisioning system that must:
 
 ## Services Overview
 
+0. Config Server Service
+    - Purpose: Centralized configuration management for all services
+    - Tech: Spring Cloud Config Server, Git-based backend
+    - Port: 8888
+    - Configuration repo: `~/fraud_detection_config_repo`
+    - Access: `http://localhost:8888/{service-name}/{profile}`
+    - Example: `http://localhost:8888/auth_gateway/default`
+
 1. API Gateway & Auth
     - Purpose: Single entry point, JWT validation, rate limiting, correlation ID generation
     - Tech: Spring Cloud Gateway, OAuth2/JWT, WebFlux
@@ -71,7 +79,29 @@ Fraud detection is a distributed decisioning system that must:
     - Storage: Case DB and analyst workflow states
 
 ## Testing the System
-Entry API:
+
+### Starting the System
+
+1. **Start Config Server** (required first):
+```bash
+cd config_server
+./gradlew bootRun
+```
+
+2. **Start other services** (after config server is running):
+```bash
+# Terminal 2
+cd auth_gateway
+./gradlew bootRun
+
+# Terminal 3
+cd auth_service_fraud
+./gradlew bootRun
+
+# Repeat for other services...
+```
+
+### Entry API:
 POST /api/transactions
 
 Example ALLOW case:

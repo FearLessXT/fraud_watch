@@ -1,12 +1,12 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '4.0.2'
+    id 'org.springframework.boot' version '4.1.1'
     id 'io.spring.dependency-management' version '1.1.7'
 }
 
-group = 'com.api.auth-service'
+group = 'com.api'
 version = '0.0.1-SNAPSHOT'
-description = 'auth_service_fraud'
+description = 'risk_score_service_fruad'
 
 java {
     toolchain {
@@ -23,15 +23,13 @@ ext {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-kafka'
     implementation 'org.springframework.boot:spring-boot-starter-webmvc'
-    implementation 'org.springframework.security:spring-security-oauth2-authorization-server'
-    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
-    implementation 'org.postgresql:postgresql'
-    implementation 'org.projectlombok:lombok'
-    implementation "commons-logging:commons-logging:1.3.4"
-    testImplementation 'org.springframework.boot:spring-boot-starter-security-test'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-kafka-test'
+    testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 

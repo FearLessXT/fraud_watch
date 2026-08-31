@@ -12,6 +12,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/audit_compliance_service_fraud" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/audit_compliance_service_fraud" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/auth_gateway" />
         <option name="modules">
           <set>
@@ -44,6 +52,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/enrichment_service_fraud" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/enrichment_service_fraud" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/fraud_action_service" />
         <option name="modules">
           <set>
@@ -56,6 +72,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/risk_score_service_fruad" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/transaction_service_fraud" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/transaction_service_fraud" />
           </set>
         </option>
       </GradleProjectSettings>

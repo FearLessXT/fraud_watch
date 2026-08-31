@@ -7,6 +7,7 @@ import org.apache.kafka.clients.consumer.AcknowledgeType;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.slf4j.MDC;
+import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 import tools.jackson.databind.ObjectMapper;
@@ -25,6 +26,10 @@ public class TransactionScoredListener {
     private final KafkaTemplate<String, String> kafkaTemplate;
     private final DecisionPolicyService decisionPolicyService;
 
+    @KafkaListener(
+            topics = "transactions.scored",
+            containerFactory = "kafkaListenerContainerFactory"
+    )
     public void onMessage(
             ConsumerRecord<String, String> recored,
             AcknowledgeType ack

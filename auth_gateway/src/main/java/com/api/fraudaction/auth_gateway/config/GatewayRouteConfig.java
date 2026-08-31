@@ -22,8 +22,12 @@ public class GatewayRouteConfig {
 
                 // Oauth2 Token Endpoint
                 .route("auth-token", r -> r
-                        .path("/oauth2/token")
+                        .path("/auth/**")
                         .filters( f->f
+                                .rewritePath(
+                                        "/auth/(?<segment>.*)",
+                                        "/${segment}"
+                                )
                                 .circuitBreaker(c->c
                                         .setName("auth-token")
                                         .setFallbackUri("forward:/fallback/auth")
@@ -36,9 +40,21 @@ public class GatewayRouteConfig {
                         .uri("http://localhost:9001")
                 )
 
+                // JWKS Endpoint
+                .route("auth-jwks", r -> r
+                        .path("/.well-known/**")
+                        .filters( f->f
+                                .circuitBreaker(c->c
+                                        .setName("auth-jwks")
+                                        .setFallbackUri("forward:/fallback/auth")
+                                )
+                        )
+                        .uri("http://localhost:9001")
+                )
+
                 //TRANSACTION INGESTION
                 .route("transaction-ingestion", r -> r
-                        .path("/api/transaction/**")
+                        .path("/api/transactions/**")
                         .filters( f -> f
                                 .filter(new CorrelationIdFilter())
                                 .requestRateLimiter( c -> c
@@ -49,6 +65,5 @@ public class GatewayRouteConfig {
                         .uri("http://localhost:9002")
                 )
                 .build();
-
     }
 }

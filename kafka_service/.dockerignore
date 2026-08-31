@@ -1,0 +1,7 @@
+# Docker ignore for Kafka service
+.git
+.gitignore
+README.md
+*.md
+.DS_Store
+*.log

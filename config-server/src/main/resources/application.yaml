@@ -5,8 +5,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/FearLessXT/fraud_detection_config_repo
+          uri: ${CONFIG_REPO}
           default-label: main
 
 server:
   port: 8888
+
+#https://github.com/FearLessXT/fraud_detection_config_repo

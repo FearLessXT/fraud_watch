@@ -4,13 +4,16 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/action_service_fruad" />
     <file type="web" url="file://$PROJECT_DIR$/alert_case_service_detection" />
+    <file type="web" url="file://$PROJECT_DIR$/audit_compliance_service_fraud" />
     <file type="web" url="file://$PROJECT_DIR$/auth_gateway" />
     <file type="web" url="file://$PROJECT_DIR$/auth_service" />
     <file type="web" url="file://$PROJECT_DIR$/auth_service_fraud" />
     <file type="web" url="file://$PROJECT_DIR$/config-server" />
     <file type="web" url="file://$PROJECT_DIR$/decision_service_fraud" />
+    <file type="web" url="file://$PROJECT_DIR$/enrichment_service_fraud" />
     <file type="web" url="file://$PROJECT_DIR$/fraud_action_service" />
     <file type="web" url="file://$PROJECT_DIR$/risk_score_service_fruad" />
+    <file type="web" url="file://$PROJECT_DIR$/transaction_service_fraud" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_25" default="true" project-jdk-name="openjdk-25" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

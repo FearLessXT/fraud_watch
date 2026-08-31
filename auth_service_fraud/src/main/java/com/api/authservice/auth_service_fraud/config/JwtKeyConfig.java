@@ -6,8 +6,8 @@ import com.nimbusds.jose.jwk.source.JWKSource;
 import com.nimbusds.jose.proc.SecurityContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.oauth2.jwt.JwtEncoder;
-import org.springframework.security.oauth2.jwt.NimbusJwtEncoder;
+import org.springframework.security.config.annotation.web.configuration.OAuth2AuthorizationServerConfiguration;
+import org.springframework.security.oauth2.jwt.JwtDecoder;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
@@ -19,26 +19,42 @@ import java.util.UUID;
 public class JwtKeyConfig {
 
     @Bean
-    KeyPair rsaKeyPair() throws Exception {
-        var generator = KeyPairGenerator.getInstance("RSA");
-        generator.initialize(2048);
-        return generator.generateKeyPair();
+    public JWKSource<SecurityContext> jwkSource() {
+
+        RSAKey rsaKey = generateRsa();
+
+        JWKSet jwkSet = new JWKSet(rsaKey);
+
+        return (jwkSelector, securityContext) ->
+                jwkSelector.select(jwkSet);
     }
 
-    @Bean
-    JWKSource<SecurityContext> jwkSource(KeyPair keyPair) {
-        var rsaKey = new RSAKey.Builder((RSAPublicKey) keyPair.getPublic())
+    private static RSAKey generateRsa() {
+
+        KeyPair keyPair = generateRsaKey();
+
+        return new RSAKey.Builder((RSAPublicKey) keyPair.getPublic())
                 .privateKey((RSAPrivateKey) keyPair.getPrivate())
                 .keyID(UUID.randomUUID().toString())
                 .build();
+    }
 
-        var jwkSet = new JWKSet(rsaKey);
+    private static KeyPair generateRsaKey() {
+        try {
+            KeyPairGenerator generator =
+                    KeyPairGenerator.getInstance("RSA");
 
-        return ((jwkSelector, securityContext) -> jwkSelector.select(jwkSet));
+            generator.initialize(2048);
+
+            return generator.generateKeyPair();
+
+        } catch (Exception ex) {
+            throw new IllegalStateException(ex);
+        }
     }
 
     @Bean
-    JwtEncoder jwtEncoder(JWKSource<SecurityContext> jwkSource) {
-        return new NimbusJwtEncoder(jwkSource);
+    JwtDecoder jwtDecoder(JWKSource<SecurityContext> jwkSource) {
+        return OAuth2AuthorizationServerConfiguration.jwtDecoder(jwkSource);
     }
 }

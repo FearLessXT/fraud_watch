@@ -3,11 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/alert_case_service_detection.main.iml" filepath="$PROJECT_DIR$/.idea/modules/alert_case_service_detection.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth_gateway.main.iml" filepath="$PROJECT_DIR$/.idea/modules/auth_gateway.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth_service_fraud.main.iml" filepath="$PROJECT_DIR$/.idea/modules/auth_service_fraud.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/decision_service_fraud.main.iml" filepath="$PROJECT_DIR$/.idea/modules/decision_service_fraud.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/enrichment_service_fraud.main.iml" filepath="$PROJECT_DIR$/.idea/modules/enrichment_service_fraud.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fraud_action_service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fraud_action_service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/fraud_detection.iml" filepath="$PROJECT_DIR$/.idea/fraud_detection.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/risk_score_service_fruad.main.iml" filepath="$PROJECT_DIR$/.idea/modules/risk_score_service_fruad.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/transaction_service_fraud.main.iml" filepath="$PROJECT_DIR$/.idea/modules/transaction_service_fraud.main.iml" />
     </modules>
   </component>
 </project>
